@@ -10,12 +10,21 @@
 		98D212A5290E596E00BA9347 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D212A4290E596E00BA9347 /* AppDelegate.swift */; };
 		98D212A7290E596E00BA9347 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D212A6290E596E00BA9347 /* SceneDelegate.swift */; };
 		98D212A9290E596E00BA9347 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D212A8290E596E00BA9347 /* ViewController.swift */; };
-		98D212AC290E596E00BA9347 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98D212AA290E596E00BA9347 /* Main.storyboard */; };
 		98D212AE290E596F00BA9347 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98D212AD290E596F00BA9347 /* Assets.xcassets */; };
 		98D212B1290E596F00BA9347 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98D212AF290E596F00BA9347 /* LaunchScreen.storyboard */; };
 		98D212BC290E596F00BA9347 /* TravelAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D212BB290E596F00BA9347 /* TravelAITests.swift */; };
 		98D212C6290E596F00BA9347 /* TravelAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D212C5290E596F00BA9347 /* TravelAIUITests.swift */; };
 		98D212C8290E596F00BA9347 /* TravelAIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D212C7290E596F00BA9347 /* TravelAIUITestsLaunchTests.swift */; };
+		98D8ED65290E6300005BD060 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 98D8ED64290E6300005BD060 /* SnapKit */; };
+		98D8ED68290E6333005BD060 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 98D8ED67290E6333005BD060 /* RxCocoa */; };
+		98D8ED6A290E6333005BD060 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 98D8ED69290E6333005BD060 /* RxSwift */; };
+		98D8ED6D290E63AA005BD060 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D8ED6B290E63AA005BD060 /* TabBarItem.swift */; };
+		98D8ED6E290E63AA005BD060 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D8ED6C290E63AA005BD060 /* TabBarViewController.swift */; };
+		98D8ED71290E6479005BD060 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D8ED70290E6479005BD060 /* LogInViewController.swift */; };
+		98D8ED74290E6A48005BD060 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 98D8ED73290E6A48005BD060 /* FirebaseAnalytics */; };
+		98D8ED76290E6D93005BD060 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98D8ED75290E6D93005BD060 /* GoogleService-Info.plist */; };
+		98D8ED78290E6DF7005BD060 /* ASAuthorizationControllerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D8ED77290E6DF7005BD060 /* ASAuthorizationControllerProxy.swift */; };
+		98D8ED7B290E6E24005BD060 /* AuthenticationServices+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D8ED7A290E6E24005BD060 /* AuthenticationServices+Rx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +49,6 @@
 		98D212A4290E596E00BA9347 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98D212A6290E596E00BA9347 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		98D212A8290E596E00BA9347 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		98D212AB290E596E00BA9347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98D212AD290E596F00BA9347 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98D212B0290E596F00BA9347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98D212B2290E596F00BA9347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +57,13 @@
 		98D212C1290E596F00BA9347 /* TravelAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D212C5290E596F00BA9347 /* TravelAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelAIUITests.swift; sourceTree = "<group>"; };
 		98D212C7290E596F00BA9347 /* TravelAIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelAIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		98D8ED6B290E63AA005BD060 /* TabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		98D8ED6C290E63AA005BD060 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		98D8ED70290E6479005BD060 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		98D8ED75290E6D93005BD060 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		98D8ED77290E6DF7005BD060 /* ASAuthorizationControllerProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAuthorizationControllerProxy.swift; sourceTree = "<group>"; };
+		98D8ED7A290E6E24005BD060 /* AuthenticationServices+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticationServices+Rx.swift"; sourceTree = "<group>"; };
+		98D8ED7C290E715D005BD060 /* TravelAI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TravelAI.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D8ED6A290E6333005BD060 /* RxSwift in Frameworks */,
+				98D8ED68290E6333005BD060 /* RxCocoa in Frameworks */,
+				98D8ED74290E6A48005BD060 /* FirebaseAnalytics in Frameworks */,
+				98D8ED65290E6300005BD060 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +118,16 @@
 		98D212A3290E596E00BA9347 /* TravelAI */ = {
 			isa = PBXGroup;
 			children = (
+				98D8ED7C290E715D005BD060 /* TravelAI.entitlements */,
+				98D8ED75290E6D93005BD060 /* GoogleService-Info.plist */,
+				98D8ED6F290E63B4005BD060 /* TabBar */,
 				98D212A4290E596E00BA9347 /* AppDelegate.swift */,
 				98D212A6290E596E00BA9347 /* SceneDelegate.swift */,
 				98D212A8290E596E00BA9347 /* ViewController.swift */,
-				98D212AA290E596E00BA9347 /* Main.storyboard */,
 				98D212AD290E596F00BA9347 /* Assets.xcassets */,
 				98D212AF290E596F00BA9347 /* LaunchScreen.storyboard */,
 				98D212B2290E596F00BA9347 /* Info.plist */,
+				98D8ED79290E6E0D005BD060 /* Login */,
 			);
 			path = TravelAI;
 			sourceTree = "<group>";
@@ -127,6 +149,25 @@
 			path = TravelAIUITests;
 			sourceTree = "<group>";
 		};
+		98D8ED6F290E63B4005BD060 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				98D8ED6B290E63AA005BD060 /* TabBarItem.swift */,
+				98D8ED6C290E63AA005BD060 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		98D8ED79290E6E0D005BD060 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				98D8ED70290E6479005BD060 /* LogInViewController.swift */,
+				98D8ED77290E6DF7005BD060 /* ASAuthorizationControllerProxy.swift */,
+				98D8ED7A290E6E24005BD060 /* AuthenticationServices+Rx.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +184,12 @@
 			dependencies = (
 			);
 			name = TravelAI;
+			packageProductDependencies = (
+				98D8ED64290E6300005BD060 /* SnapKit */,
+				98D8ED67290E6333005BD060 /* RxCocoa */,
+				98D8ED69290E6333005BD060 /* RxSwift */,
+				98D8ED73290E6A48005BD060 /* FirebaseAnalytics */,
+			);
 			productName = TravelAI;
 			productReference = 98D212A1290E596E00BA9347 /* TravelAI.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +262,11 @@
 				Base,
 			);
 			mainGroup = 98D21298290E596E00BA9347;
+			packageReferences = (
+				98D8ED63290E6300005BD060 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				98D8ED66290E6333005BD060 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				98D8ED72290E6A48005BD060 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 98D212A2290E596E00BA9347 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +285,7 @@
 			files = (
 				98D212B1290E596F00BA9347 /* LaunchScreen.storyboard in Resources */,
 				98D212AE290E596F00BA9347 /* Assets.xcassets in Resources */,
-				98D212AC290E596E00BA9347 /* Main.storyboard in Resources */,
+				98D8ED76290E6D93005BD060 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +312,11 @@
 			files = (
 				98D212A9290E596E00BA9347 /* ViewController.swift in Sources */,
 				98D212A5290E596E00BA9347 /* AppDelegate.swift in Sources */,
+				98D8ED71290E6479005BD060 /* LogInViewController.swift in Sources */,
+				98D8ED7B290E6E24005BD060 /* AuthenticationServices+Rx.swift in Sources */,
+				98D8ED6D290E63AA005BD060 /* TabBarItem.swift in Sources */,
+				98D8ED6E290E63AA005BD060 /* TabBarViewController.swift in Sources */,
+				98D8ED78290E6DF7005BD060 /* ASAuthorizationControllerProxy.swift in Sources */,
 				98D212A7290E596E00BA9347 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +354,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		98D212AA290E596E00BA9347 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				98D212AB290E596E00BA9347 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		98D212AF290E596F00BA9347 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -435,9 +484,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TravelAI/TravelAI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U2SM57XQVW;
+				DEVELOPMENT_TEAM = K4EPMTZL7V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TravelAI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -450,7 +500,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.YANG.TravelAI.TravelAI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YANG.TravelAI.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -463,9 +513,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TravelAI/TravelAI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U2SM57XQVW;
+				DEVELOPMENT_TEAM = K4EPMTZL7V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TravelAI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -478,7 +529,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.YANG.TravelAI.TravelAI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YANG.TravelAI.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -602,6 +653,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		98D8ED63290E6300005BD060 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		98D8ED66290E6333005BD060 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		98D8ED72290E6A48005BD060 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		98D8ED64290E6300005BD060 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 98D8ED63290E6300005BD060 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		98D8ED67290E6333005BD060 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 98D8ED66290E6333005BD060 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		98D8ED69290E6333005BD060 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 98D8ED66290E6333005BD060 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		98D8ED73290E6A48005BD060 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 98D8ED72290E6A48005BD060 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 98D21299290E596E00BA9347 /* Project object */;
 }
