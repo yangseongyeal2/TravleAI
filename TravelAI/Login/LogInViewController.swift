@@ -77,19 +77,13 @@ private extension LoginViewController {
 
         present(sheet, animated: true)
     }
+    
     func moveToMainPage(){
         let tabBarController: TabBarViewController = TabBarViewController()
         tabBarController.modalPresentationStyle = .fullScreen
         present(tabBarController, animated: true)
-        //navigationController?.pushViewController(tabBarController, animated: true)
-//        self.dismiss(animated: true){
-//            self.present(tabBarController, animated: true)
-//        }
-//        present(tabBarController, animated: true){
-//            self.dismiss(animated: true)
-//        }
-        
     }
+    
 }
 extension LoginViewController: ASAuthorizationControllerDelegate, ASAuthorizationControllerPresentationContextProviding {
     func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
@@ -104,7 +98,7 @@ extension LoginViewController: ASAuthorizationControllerDelegate, ASAuthorizatio
             let userIdentifier = appleIDCredential.user
             let fullName = appleIDCredential.fullName
             let email = appleIDCredential.email
-            
+            Logger().Log_Y("TEST")
             print("User ID : \(userIdentifier)")
             print("User Email : \(email ?? "")")
             print("User Name : \((fullName?.givenName ?? "") + (fullName?.familyName ?? ""))")

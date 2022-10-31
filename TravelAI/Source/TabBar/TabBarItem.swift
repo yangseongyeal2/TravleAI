@@ -8,6 +8,8 @@
 import UIKit
 
 enum TabBarItem: CaseIterable {
+   
+    
     case feed
     case profile
 
@@ -28,9 +30,11 @@ enum TabBarItem: CaseIterable {
     }
 
     var viewController: UIViewController {
+        
+        
         switch self {
         case .feed:
-            return UINavigationController(rootViewController: ViewController())
+            return UINavigationController(rootViewController: MainViewController())
         case .profile:
             return UINavigationController(rootViewController: ViewController())
         }
