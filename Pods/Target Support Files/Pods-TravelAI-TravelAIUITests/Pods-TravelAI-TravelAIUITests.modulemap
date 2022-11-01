@@ -1,0 +1,6 @@
+framework module Pods_TravelAI_TravelAIUITests {
+  umbrella header "Pods-TravelAI-TravelAIUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

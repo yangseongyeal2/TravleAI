@@ -1,0 +1,6 @@
+framework module Pods_TravelAI {
+  umbrella header "Pods-TravelAI-umbrella.h"
+
+  export *
+  module * { export * }
+}
