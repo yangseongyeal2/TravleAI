@@ -8,7 +8,7 @@
 import RxSwift
 import UIKit
 //import Logger
-struct MainModel {
+struct SearchModel {
     let network = SearchBlogNetwork()
     
     func searchBlog(_ query: String) -> Single<Result<DKBlog, SearchNetworkError>> {
@@ -54,7 +54,7 @@ struct MainModel {
             }
     }
     
-    func sort(by type: MainViewController.AlertAction, of data: [BlogListCellData]) -> [BlogListCellData] {
+    func sort(by type: SearchViewController.AlertAction, of data: [BlogListCellData]) -> [BlogListCellData] {
         switch type {
         case .title:
             return data.sorted { $0.title ?? "" < $1.title ?? "" }

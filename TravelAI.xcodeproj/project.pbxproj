@@ -39,12 +39,13 @@
 		98D8ED76290E6D93005BD060 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98D8ED75290E6D93005BD060 /* GoogleService-Info.plist */; };
 		98D8ED78290E6DF7005BD060 /* ASAuthorizationControllerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D8ED77290E6DF7005BD060 /* ASAuthorizationControllerProxy.swift */; };
 		98D8ED7B290E6E24005BD060 /* AuthenticationServices+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D8ED7A290E6E24005BD060 /* AuthenticationServices+Rx.swift */; };
-		98D8ED7F290E8399005BD060 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D8ED7E290E8399005BD060 /* MainViewController.swift */; };
+		98D8ED7F290E8399005BD060 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D8ED7E290E8399005BD060 /* SearchViewController.swift */; };
 		98D8ED81290E89CB005BD060 /* SerchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D8ED80290E89CB005BD060 /* SerchBar.swift */; };
 		98D8ED83290E8A0C005BD060 /* SearchBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D8ED82290E8A0C005BD060 /* SearchBarViewModel.swift */; };
-		98D8ED86290E8BA1005BD060 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D8ED85290E8BA1005BD060 /* MainViewModel.swift */; };
-		98D8ED89290E8C07005BD060 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D8ED88290E8C07005BD060 /* MainModel.swift */; };
+		98D8ED86290E8BA1005BD060 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D8ED85290E8BA1005BD060 /* SearchViewModel.swift */; };
+		98D8ED89290E8C07005BD060 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D8ED88290E8C07005BD060 /* SearchModel.swift */; };
 		98E28CBC2911543E00C50F16 /* AppLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E28CBB2911543E00C50F16 /* AppLaunchViewController.swift */; };
+		98E28CD12912715800C50F16 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E28CD02912715800C50F16 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,12 +100,13 @@
 		98D8ED77290E6DF7005BD060 /* ASAuthorizationControllerProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAuthorizationControllerProxy.swift; sourceTree = "<group>"; };
 		98D8ED7A290E6E24005BD060 /* AuthenticationServices+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticationServices+Rx.swift"; sourceTree = "<group>"; };
 		98D8ED7C290E715D005BD060 /* TravelAI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TravelAI.entitlements; sourceTree = "<group>"; };
-		98D8ED7E290E8399005BD060 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		98D8ED7E290E8399005BD060 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		98D8ED80290E89CB005BD060 /* SerchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerchBar.swift; sourceTree = "<group>"; };
 		98D8ED82290E8A0C005BD060 /* SearchBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewModel.swift; sourceTree = "<group>"; };
-		98D8ED85290E8BA1005BD060 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		98D8ED88290E8C07005BD060 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		98D8ED85290E8BA1005BD060 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		98D8ED88290E8C07005BD060 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		98E28CBB2911543E00C50F16 /* AppLaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchViewController.swift; sourceTree = "<group>"; };
+		98E28CD02912715800C50F16 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A63C59D12C55A1DE404D4CF0 /* Pods-TravelAITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelAITests.release.xcconfig"; path = "Target Support Files/Pods-TravelAITests/Pods-TravelAITests.release.xcconfig"; sourceTree = "<group>"; };
 		A84CC69BAE3383E60C3B55A0 /* Pods-TravelAI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelAI.release.xcconfig"; path = "Target Support Files/Pods-TravelAI/Pods-TravelAI.release.xcconfig"; sourceTree = "<group>"; };
 		AE0C71050518316C4CE7F4B1 /* Pods_TravelAI_TravelAIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelAI_TravelAIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -215,7 +217,7 @@
 				98D212B2290E596F00BA9347 /* Info.plist */,
 				9804A83C290E9D6A005FF882 /* NetWork */,
 				9804A83D290E9D81005FF882 /* Entities */,
-				9804A83E290EA1A6005FF882 /* Logger.swift */,
+				98E28CD2291271C900C50F16 /* Log */,
 				98E28CBB2911543E00C50F16 /* AppLaunchViewController.swift */,
 			);
 			path = TravelAI;
@@ -261,23 +263,23 @@
 		98D8ED7D290E8377005BD060 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				9804A842290EA8B0005FF882 /* ListView */,
-				98D8ED84290E8B57005BD060 /* Main */,
-				98D8ED6B290E63AA005BD060 /* TabBarItem.swift */,
-				98D8ED6C290E63AA005BD060 /* TabBarViewController.swift */,
+				98E28CCF2912713100C50F16 /* TabBarController */,
+				98D8ED84290E8B57005BD060 /* Search */,
+				98E28CD02912715800C50F16 /* HomeViewController.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
 		};
-		98D8ED84290E8B57005BD060 /* Main */ = {
+		98D8ED84290E8B57005BD060 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				98D8ED7E290E8399005BD060 /* MainViewController.swift */,
-				98D8ED85290E8BA1005BD060 /* MainViewModel.swift */,
-				98D8ED88290E8C07005BD060 /* MainModel.swift */,
+				9804A842290EA8B0005FF882 /* ListView */,
+				98D8ED7E290E8399005BD060 /* SearchViewController.swift */,
+				98D8ED85290E8BA1005BD060 /* SearchViewModel.swift */,
+				98D8ED88290E8C07005BD060 /* SearchModel.swift */,
 				98D8ED87290E8BE4005BD060 /* SerchBar */,
 			);
-			path = Main;
+			path = Search;
 			sourceTree = "<group>";
 		};
 		98D8ED87290E8BE4005BD060 /* SerchBar */ = {
@@ -298,6 +300,23 @@
 				98D212AF290E596F00BA9347 /* LaunchScreen.storyboard */,
 			);
 			path = base;
+			sourceTree = "<group>";
+		};
+		98E28CCF2912713100C50F16 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				98D8ED6B290E63AA005BD060 /* TabBarItem.swift */,
+				98D8ED6C290E63AA005BD060 /* TabBarViewController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		98E28CD2291271C900C50F16 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				9804A83E290EA1A6005FF882 /* Logger.swift */,
+			);
+			path = Log;
 			sourceTree = "<group>";
 		};
 		C05815941C66A8AB43819C7E /* Pods */ = {
@@ -575,7 +594,7 @@
 			files = (
 				9804A841290EA7F1005FF882 /* Alert.swift in Sources */,
 				98D212A9290E596E00BA9347 /* ViewController.swift in Sources */,
-				98D8ED89290E8C07005BD060 /* MainModel.swift in Sources */,
+				98D8ED89290E8C07005BD060 /* SearchModel.swift in Sources */,
 				9804A839290E9BB9005FF882 /* DKBlog.swift in Sources */,
 				98D212A5290E596E00BA9347 /* AppDelegate.swift in Sources */,
 				98D8ED71290E6479005BD060 /* LogInViewController.swift in Sources */,
@@ -584,11 +603,12 @@
 				9804A84C290EA8B0005FF882 /* FilterViewModel.swift in Sources */,
 				98E28CBC2911543E00C50F16 /* AppLaunchViewController.swift in Sources */,
 				98D8ED6D290E63AA005BD060 /* TabBarItem.swift in Sources */,
+				98E28CD12912715800C50F16 /* HomeViewController.swift in Sources */,
 				98D8ED6E290E63AA005BD060 /* TabBarViewController.swift in Sources */,
 				9804A84D290EA8B0005FF882 /* BlogListViewModel.swift in Sources */,
 				9804A83F290EA1A6005FF882 /* Logger.swift in Sources */,
 				9804A849290EA8B0005FF882 /* BlogListView.swift in Sources */,
-				98D8ED7F290E8399005BD060 /* MainViewController.swift in Sources */,
+				98D8ED7F290E8399005BD060 /* SearchViewController.swift in Sources */,
 				9804A837290E9B92005FF882 /* SearchBlogNetwork.swift in Sources */,
 				9804A84A290EA8B0005FF882 /* BlogListCell.swift in Sources */,
 				98D8ED78290E6DF7005BD060 /* ASAuthorizationControllerProxy.swift in Sources */,
@@ -597,7 +617,7 @@
 				98D8ED81290E89CB005BD060 /* SerchBar.swift in Sources */,
 				9804A83B290E9BDF005FF882 /* SearchNetworkError.swift in Sources */,
 				98D8ED83290E8A0C005BD060 /* SearchBarViewModel.swift in Sources */,
-				98D8ED86290E8BA1005BD060 /* MainViewModel.swift in Sources */,
+				98D8ED86290E8BA1005BD060 /* SearchViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

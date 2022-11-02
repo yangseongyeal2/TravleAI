@@ -9,16 +9,16 @@ import RxSwift
 import RxCocoa
 import UIKit
 
-struct MainViewModel {
+struct SearchViewModel {
     let disposeBag = DisposeBag()
     
     let searchBarViewModel = SearchBarViewModel()
     let blogListViewModel = BlogListViewModel()
     
-    let alertActionTapped = PublishRelay<MainViewController.AlertAction>()
-    let shouldPresentAlert: Signal<MainViewController.Alert>
+    let alertActionTapped = PublishRelay<SearchViewController.AlertAction>()
+    let shouldPresentAlert: Signal<SearchViewController.Alert>
     
-    init(model: MainModel = MainModel()) {
+    init(model: SearchModel = SearchModel()) {
         let blogResult = searchBarViewModel.shouldLoadResult
             .flatMapLatest(model.searchBlog)
             .share()
@@ -65,7 +65,7 @@ struct MainViewModel {
             .disposed(by: disposeBag)
         
         let alertSheetForSorting = blogListViewModel.filterViewModel.sortButtonTapped
-            .map { _ -> MainViewController.Alert in
+            .map { _ -> SearchViewController.Alert in
                 return (title: nil, message: nil, actions: [.title, .datetime, .cancel], style: .actionSheet)
             }
         
@@ -73,7 +73,7 @@ struct MainViewModel {
             .do(onNext: { message in
                 print("error: \(message ?? "")")
             })
-                .map { _ -> MainViewController.Alert in
+                .map { _ -> SearchViewController.Alert in
                     return (
                         title: "앗!",
                         message: "예상치 못한 오류가 발생했습니다. 잠시 후 다시 시도해주세요.",

@@ -9,12 +9,13 @@ import UIKit
 
 enum TabBarItem: CaseIterable {
    
-    
+    case main
     case feed
     case profile
 
     var title: String {
         switch self {
+        case .main: return "Main"
         case .feed: return "Feed"
         case .profile: return "Profile"
         }
@@ -22,6 +23,8 @@ enum TabBarItem: CaseIterable {
 
     var icon: (default: UIImage?, selected: UIImage?) {
         switch self {
+        case .main:
+            return (UIImage(systemName: "house"), UIImage(systemName: "house.fill"))
         case .feed:
             return (UIImage(systemName: "list.bullet"), UIImage(systemName: "list.bullet"))
         case .profile:
@@ -33,8 +36,15 @@ enum TabBarItem: CaseIterable {
         
         
         switch self {
+        case .main:
+//            let navController = UINavigationController(rootViewController: HomeViewController())
+//            navController.hidesBarsOnTap = false
+//            //navigationController?.navigationItem.rightBarButtonItem?.image =
+//            navController.navigationItem.rightBarButtonItem?.image = UIImage(systemName: "list.dash")
+//            return navController
+            return UINavigationController(rootViewController: HomeViewController())
         case .feed:
-            return UINavigationController(rootViewController: MainViewController())
+            return UINavigationController(rootViewController: SearchViewController())
         case .profile:
             return UINavigationController(rootViewController: ViewController())
         }

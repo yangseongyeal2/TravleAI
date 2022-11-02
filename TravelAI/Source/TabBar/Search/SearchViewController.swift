@@ -9,13 +9,13 @@ import RxSwift
 import RxCocoa
 import UIKit
 
-class MainViewController: UIViewController {
+final class SearchViewController: UIViewController {
     
     let disposeBag = DisposeBag()
     
     let listView = BlogListView()
     let searchBar = SearchBar()
-    let rootViewModel = MainViewModel()
+    let rootViewModel = SearchViewModel()
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super .init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -33,13 +33,13 @@ class MainViewController: UIViewController {
     }
 
     
-    func bind(_ viewModel: MainViewModel) {
+    func bind(_ viewModel: SearchViewModel) {
         listView.bind(viewModel.blogListViewModel)
         searchBar.bind(viewModel.searchBarViewModel)
         
         ///Alert
         viewModel.shouldPresentAlert
-            .flatMapLatest { alert -> Signal<MainViewController.AlertAction> in
+            .flatMapLatest { alert -> Signal<SearchViewController.AlertAction> in
                 let alertController = UIAlertController(title: alert.title, message: alert.message, preferredStyle: alert.style)
                 return self.presentAlertController(alertController, actions: alert.actions)
             }
@@ -71,7 +71,7 @@ class MainViewController: UIViewController {
     }
 
 }
-extension MainViewController {
+extension SearchViewController {
     typealias Alert = (title: String?, message: String?, actions: [AlertAction], style: UIAlertController.Style)
 
     enum AlertAction: AlertActionConvertible {
