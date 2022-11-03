@@ -37,12 +37,11 @@ enum TabBarItem: CaseIterable {
         
         switch self {
         case .main:
-//            let navController = UINavigationController(rootViewController: HomeViewController())
-//            navController.hidesBarsOnTap = false
-//            //navigationController?.navigationItem.rightBarButtonItem?.image =
-//            navController.navigationItem.rightBarButtonItem?.image = UIImage(systemName: "list.dash")
-//            return navController
-            return UINavigationController(rootViewController: HomeViewController())
+            let layout = UICollectionViewFlowLayout()
+            let homeViewController = HomeViewController(collectionViewLayout: layout)
+            let rootNavigationController = UINavigationController(rootViewController: homeViewController)
+            
+            return rootNavigationController
         case .feed:
             return UINavigationController(rootViewController: SearchViewController())
         case .profile:

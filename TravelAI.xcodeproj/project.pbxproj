@@ -46,6 +46,12 @@
 		98D8ED89290E8C07005BD060 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D8ED88290E8C07005BD060 /* SearchModel.swift */; };
 		98E28CBC2911543E00C50F16 /* AppLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E28CBB2911543E00C50F16 /* AppLaunchViewController.swift */; };
 		98E28CD12912715800C50F16 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E28CD02912715800C50F16 /* HomeViewController.swift */; };
+		98E28CD429136EB400C50F16 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E28CD329136EB400C50F16 /* Content.swift */; };
+		98E28CD92913737F00C50F16 /* Content.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98E28CD82913737F00C50F16 /* Content.plist */; };
+		98E28CDB291378F000C50F16 /* PlaceInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E28CDA291378F000C50F16 /* PlaceInfoCollectionViewCell.swift */; };
+		98E28CDD29137B5A00C50F16 /* ContentCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E28CDC29137B5A00C50F16 /* ContentCollectionViewHeader.swift */; };
+		98E28CDF2913C45700C50F16 /* PlaceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E28CDE2913C45700C50F16 /* PlaceInfo.swift */; };
+		98E28CE12913F58500C50F16 /* PlaceInfoDeatailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E28CE02913F58500C50F16 /* PlaceInfoDeatailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +113,12 @@
 		98D8ED88290E8C07005BD060 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		98E28CBB2911543E00C50F16 /* AppLaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchViewController.swift; sourceTree = "<group>"; };
 		98E28CD02912715800C50F16 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		98E28CD329136EB400C50F16 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		98E28CD82913737F00C50F16 /* Content.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Content.plist; sourceTree = "<group>"; };
+		98E28CDA291378F000C50F16 /* PlaceInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceInfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		98E28CDC29137B5A00C50F16 /* ContentCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewHeader.swift; sourceTree = "<group>"; };
+		98E28CDE2913C45700C50F16 /* PlaceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceInfo.swift; sourceTree = "<group>"; };
+		98E28CE02913F58500C50F16 /* PlaceInfoDeatailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceInfoDeatailViewController.swift; sourceTree = "<group>"; };
 		A63C59D12C55A1DE404D4CF0 /* Pods-TravelAITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelAITests.release.xcconfig"; path = "Target Support Files/Pods-TravelAITests/Pods-TravelAITests.release.xcconfig"; sourceTree = "<group>"; };
 		A84CC69BAE3383E60C3B55A0 /* Pods-TravelAI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelAI.release.xcconfig"; path = "Target Support Files/Pods-TravelAI/Pods-TravelAI.release.xcconfig"; sourceTree = "<group>"; };
 		AE0C71050518316C4CE7F4B1 /* Pods_TravelAI_TravelAIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelAI_TravelAIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +173,8 @@
 				9804A838290E9BB9005FF882 /* DKBlog.swift */,
 				9804A840290EA7F1005FF882 /* Alert.swift */,
 				9804A851290EA96B005FF882 /* BlogListCellData.swift */,
+				98E28CD329136EB400C50F16 /* Content.swift */,
+				98E28CDE2913C45700C50F16 /* PlaceInfo.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -210,6 +224,7 @@
 		98D212A3290E596E00BA9347 /* TravelAI */ = {
 			isa = PBXGroup;
 			children = (
+				98E28CD82913737F00C50F16 /* Content.plist */,
 				98D8ED7C290E715D005BD060 /* TravelAI.entitlements */,
 				98D8ED75290E6D93005BD060 /* GoogleService-Info.plist */,
 				98D8ED6F290E63B4005BD060 /* Source */,
@@ -265,7 +280,7 @@
 			children = (
 				98E28CCF2912713100C50F16 /* TabBarController */,
 				98D8ED84290E8B57005BD060 /* Search */,
-				98E28CD02912715800C50F16 /* HomeViewController.swift */,
+				98E28CD72913721100C50F16 /* Home */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -317,6 +332,25 @@
 				9804A83E290EA1A6005FF882 /* Logger.swift */,
 			);
 			path = Log;
+			sourceTree = "<group>";
+		};
+		98E28CD72913721100C50F16 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				98E28CD02912715800C50F16 /* HomeViewController.swift */,
+				98E28CDA291378F000C50F16 /* PlaceInfoCollectionViewCell.swift */,
+				98E28CDC29137B5A00C50F16 /* ContentCollectionViewHeader.swift */,
+				98E28CE22913F58900C50F16 /* PlacInfoDetail */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		98E28CE22913F58900C50F16 /* PlacInfoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				98E28CE02913F58500C50F16 /* PlaceInfoDeatailViewController.swift */,
+			);
+			path = PlacInfoDetail;
 			sourceTree = "<group>";
 		};
 		C05815941C66A8AB43819C7E /* Pods */ = {
@@ -464,6 +498,7 @@
 			files = (
 				98D212B1290E596F00BA9347 /* LaunchScreen.storyboard in Resources */,
 				98D212AE290E596F00BA9347 /* Assets.xcassets in Resources */,
+				98E28CD92913737F00C50F16 /* Content.plist in Resources */,
 				98D8ED76290E6D93005BD060 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -595,14 +630,18 @@
 				9804A841290EA7F1005FF882 /* Alert.swift in Sources */,
 				98D212A9290E596E00BA9347 /* ViewController.swift in Sources */,
 				98D8ED89290E8C07005BD060 /* SearchModel.swift in Sources */,
+				98E28CDF2913C45700C50F16 /* PlaceInfo.swift in Sources */,
 				9804A839290E9BB9005FF882 /* DKBlog.swift in Sources */,
 				98D212A5290E596E00BA9347 /* AppDelegate.swift in Sources */,
+				98E28CDD29137B5A00C50F16 /* ContentCollectionViewHeader.swift in Sources */,
+				98E28CD429136EB400C50F16 /* Content.swift in Sources */,
 				98D8ED71290E6479005BD060 /* LogInViewController.swift in Sources */,
 				98D8ED7B290E6E24005BD060 /* AuthenticationServices+Rx.swift in Sources */,
 				9804A84B290EA8B0005FF882 /* FilterView.swift in Sources */,
 				9804A84C290EA8B0005FF882 /* FilterViewModel.swift in Sources */,
 				98E28CBC2911543E00C50F16 /* AppLaunchViewController.swift in Sources */,
 				98D8ED6D290E63AA005BD060 /* TabBarItem.swift in Sources */,
+				98E28CDB291378F000C50F16 /* PlaceInfoCollectionViewCell.swift in Sources */,
 				98E28CD12912715800C50F16 /* HomeViewController.swift in Sources */,
 				98D8ED6E290E63AA005BD060 /* TabBarViewController.swift in Sources */,
 				9804A84D290EA8B0005FF882 /* BlogListViewModel.swift in Sources */,
@@ -617,6 +656,7 @@
 				98D8ED81290E89CB005BD060 /* SerchBar.swift in Sources */,
 				9804A83B290E9BDF005FF882 /* SearchNetworkError.swift in Sources */,
 				98D8ED83290E8A0C005BD060 /* SearchBarViewModel.swift in Sources */,
+				98E28CE12913F58500C50F16 /* PlaceInfoDeatailViewController.swift in Sources */,
 				98D8ED86290E8BA1005BD060 /* SearchViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
