@@ -46,6 +46,8 @@ private extension HomeViewController {
          collectionView.register(ContentCollectionViewHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "ContentCollectionViewHeader")
          collectionView.collectionViewLayout = layout()
          
+         
+         
     }
     //MARK: 버튼 클릭 이벤트
     @objc func goToProfileVC(){
@@ -56,7 +58,11 @@ private extension HomeViewController {
         
     }
     func moveToDetailView(placeInfo:PlaceInfo){
-        let placeDetailViewController = PlaceInfoDeatailViewController(placeInfo: placeInfo)
+        
+        let layout = UICollectionViewFlowLayout()
+        let placeDetailViewController = PlaceInfoDeatailViewController()
+//        let placeDetailViewController = PlaceInfoDeatailViewController(collectionViewLayout: layout)
+        placeDetailViewController.setPlaceInfo(placeInfo:placeInfo)
         navigationController?.pushViewController(placeDetailViewController, animated: true)
     }
     //MARK: TravelSectionLayout 설정
@@ -71,6 +77,7 @@ private extension HomeViewController {
         //secion
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .continuous
+        //section.orthogonalScrollingBehavior = .continuous
         let sectionHeader = self.createSectionHeader()
         section.boundarySupplementaryItems  = [sectionHeader]
         section.contentInsets = .init(top: 0, leading: 30, bottom: 0, trailing: 30)
@@ -86,7 +93,7 @@ private extension HomeViewController {
         let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: layoutSectionHeaderSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .topLeading)
         return sectionHeader
     }
-    
+    //MARK: LAYOUT()
     ///각각의 섹션 타입에 대한 UICollectionViewLayout 생성
     private func layout() -> UICollectionViewLayout {
         return UICollectionViewCompositionalLayout {[weak self] sectionNumber, environment -> NSCollectionLayoutSection? in
@@ -132,13 +139,17 @@ private extension HomeViewController {
                         
                         guard let section = document.data()["Section"] as? String
                                 , let mainImage = document.data()["MainImage"] as? String
+                                , let descript = document.data()["Descrypt"] as? String
+                                , let subImageList = document.data()["SubImageList"] as? [String]
+                                , let tag = document.data()["Tag"] as? [String]
+                                , let title = document.data()["Title"] as? String
                         else{
                             Logger().Log_Y("section or mainImage is null")
                             return
                         }
                         print("section:\(section)")
                         print("mainImage:\(mainImage)")
-                        let placeInfo = PlaceInfo(MainImage: mainImage, Section: section)
+                        let placeInfo = PlaceInfo(Title:title,MainImage: mainImage, Section: section,Descrypt: descript,SubImageList: subImageList,Tag: tag)
                         //list.append(placeInfo)
                         self?.placeInfos.append(placeInfo)
                         self?.collectionView.reloadData()

@@ -7,12 +7,12 @@
 
 import UIKit
 
-struct PlaceInfo: Decodable {
+struct PlaceInfo {
+    let Title : String
     let MainImage: String
     let Section: String
-    
-    enum CodingKeys: String, CodingKey {
-        case MainImage, Section
-    }
+    let Descrypt:String
+    let SubImageList:[String]
+    let Tag:[String]
 }
 
